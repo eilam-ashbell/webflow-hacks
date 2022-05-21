@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="counter.js" defer></script>
+    <link rel="stylesheet" href="tests.css">
+</head>
+<body>
+    <div>
+        <span>dd</span>
+        <span>hh</span>
+        <span>mm</span>
+        <span>ss</span>
+    </div>
+    <div>
+        <span  counter-time="2022-05-22 22:15" counter="dd">00</span>
+        <span counter="hh">00</span>
+        <span counter="mm">00</span>
+        <span counter="ss">00</span>
+    </div>
+    <div counter-show="true" style="display: none;">
+        timer is finished
+    </div>
+    <div counter-hide="true">
+        another test
+    </div>
+    <div counter-add="red">
+        class test
+    </div>
+    <div counter-add="green">
+        class test
+    </div>
+    <div counter-remove="red" class="red">
+        class test
+    </div>
+    <div counter-remove="green" class="green">
+        class test
+    </div>
+</body>
+</html>
