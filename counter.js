@@ -10,7 +10,6 @@
           $(e).text("00");
         })
       : () => {
-          console.log("outside")
           $("[counter='dd']").text(Math.floor(distance / 86400000));
           $("[counter='hh']").text(Math.floor((distance % 86400000) / 3600000));
           $("[counter='mm']").text(Math.floor((distance % 3600000) / 60000));
