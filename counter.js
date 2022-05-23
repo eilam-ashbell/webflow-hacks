@@ -5,11 +5,9 @@
   function interval(dueDate) {
     const now = new Date().getTime();
     const distance = dueDate - now;
-    console.log(distance)
     distance <= 1000
       ? $("[counter]").each(function (i, e) {
           $(e).text("00");
-          console.log("inside")
         })
       : () => {
           console.log("outside")
